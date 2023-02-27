@@ -1,0 +1,18 @@
+ALGORITHM recursive
+VAR 
+    ch : CHAR;
+    n: INTEGER
+
+n=length(ch);
+IF (n==0 ) THEN
+    Write("chaine est vide")
+ELSE
+    IF (ch[0]==ch[n]) THEN
+        recursive = recursive(ch[0],ch[n-1]);
+        Write("la chaine est palindrome");
+    
+   ELSE
+        Write("la chaine n'est pqs un palindrome");
+    END IF 
+END IF       
+END recursive;        
