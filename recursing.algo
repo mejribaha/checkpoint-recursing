@@ -1,0 +1,22 @@
+FUNCTION palindrome(s) : BOOLEAN
+    var
+        n : INTEGER;
+        i : INTEGER
+    i =0 ;    
+
+BEGIN
+    IF (len(s) <= 1) THEN
+        s = true;
+        
+    ELSE
+        IF (s[i] == s[n-1]) THEN
+            palindrome = palindrome(s[1],-s[n-1])
+            n=n-1;
+            i = i+1;
+
+        ELSE
+            s= false;
+        END_IF
+    END_IF
+    RETURN pl ;
+END
